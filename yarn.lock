@@ -7567,7 +7567,7 @@ react-fast-compare@^3.2.0:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.1.tgz#53933d9e14f364281d6cba24bfed7a4afb808b5f"
   integrity sha512-xTYf9zFim2pEif/Fw16dBiXpe0hoy5PxcD8+OwBnTtNLfIm3g6WxhKNurY+6OmdH1u6Ta/W/Vl6vjbYP1MFnDg==
 
-react-icons@^4.8.0:
+react-icons@^4.2.0, react-icons@^4.8.0:
   version "4.8.0"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.8.0.tgz#621e900caa23b912f737e41be57f27f6b2bff445"
   integrity sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg==
@@ -8499,6 +8499,13 @@ symbol-tree@^3.2.4:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
+
+t-a-e-3d-carousel-reactjs@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/t-a-e-3d-carousel-reactjs/-/t-a-e-3d-carousel-reactjs-1.0.8.tgz#a9c4403ba3f56e3e9eee22086b0930448ee4cb5d"
+  integrity sha512-v0j+y42gOlUHfLSFIRmB8hs3WROpWGX8bwnxnZpoyHNCVZyx+YLQ8T1a0QgdKTjRpByZsiSgw+1jz+lI/CsV3w==
+  dependencies:
+    react-icons "^4.2.0"
 
 tailwindcss@^3.0.2, tailwindcss@^3.3.2:
   version "3.3.2"
