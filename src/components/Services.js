@@ -4,14 +4,15 @@ import React from 'react'
 // import events from './assets/images/event.png'
 // import hotel from './assets/images/hotel.png'
 
-import { BsBuildings,BsCalendarDay } from "react-icons/bs";
-import { MdApartment } from "react-icons/md";
-import { FaHotel } from "react-icons/fa";
+import { BsBuildings } from "react-icons/bs";
+
+import { IoCarSportOutline, IoGameControllerOutline } from "react-icons/io5";
+
 
 
 const Services = () => {
   return (
-    <div className='flex max-w-3xl mx-auto space-x-20 mt-20 p-10 border-4 border-white rounded-3xl'>
+    <div className='flex max-w-xl mx-auto space-x-20 mt-20 p-10 border-4 border-white rounded-3xl'>
 
         <div className='flex flex-col items-center justify-center space-y-4 text-white hover:text-orange-400 hover:scale-110 hover:underline'>
 
@@ -24,24 +25,31 @@ const Services = () => {
         <div className='flex flex-col items-center justify-center space-y-4 text-white hover:text-green-400 hover:scale-110 hover:underline'>
 
         {/* <img className src={residency} alt="" /> */}
-        <MdApartment className='text-8xl '></MdApartment>
-        <h5 className='text-2xl font-sans font-semibold '>Residency</h5>
+        <IoGameControllerOutline className='text-8xl '></IoGameControllerOutline>
+        <h5 className='text-2xl font-sans font-semibold '>Arcade</h5>
         </div>
 
-        <div className='flex flex-col items-center justify-center space-y-4 text-white hover:text-pink-400 hover:scale-110 hover:underline'>
+        <div className='flex flex-col items-center justify-center space-y-4 text-white hover:text-purple-400 hover:scale-110 hover:underline'>
 
-        {/* <img className src={events} alt="" /> */}
+        {/* <img className src={residency} alt="" /> */}
+        <IoCarSportOutline className='text-8xl '></IoCarSportOutline>
+        <h5 className='text-2xl font-sans font-semibold '>Parking</h5>
+        </div>
+
+        {/* <div className='flex flex-col items-center justify-center space-y-4 text-white hover:text-pink-400 hover:scale-110 hover:underline'>
+
+
         <BsCalendarDay className='text-8xl '></BsCalendarDay>
         <h5 className='text-2xl font-sans font-semibol '>Events</h5>
         </div>
 
         <div className='flex flex-col items-center justify-center space-y-4 text-white hover:text-purple-400 hover:scale-110 hover:underline'>
 
-        {/* <img className src={hotel} alt="" /> */}
+
         
         <FaHotel className='text-8xl'></FaHotel>
         <h5 className='text-2xl font-sans font-semibold hover:text-yellow-300 hover:underline'>Hotels</h5>
-        </div>
+        </div> */}
 
     </div>
   )
