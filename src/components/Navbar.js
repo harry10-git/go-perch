@@ -18,7 +18,7 @@ const Navbar = () => {
           </span> */}
         </h1>
         <ul className="hidden md:flex text-[#F4AD21] text-xl font-medium">
-          <li className="p-4">Home</li>
+          <li className="p-4 hover:text-white">Home</li>
           <li className="p-4">Company</li>
           <li className="p-4">Resources</li>
           <li className="p-4">About</li>
