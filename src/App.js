@@ -1,8 +1,15 @@
 import './App.css';
-import HomeCarousel from './components/HomeCarousel';
-import Navbar from './components/Navbar';
-import Services from './components/Services';
+import React from 'react';
+
+
 import Levelup from './components/pages/Levelup';
+import Home from './components/pages/Home';
+
+// import ReactDOM from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
 
 
@@ -10,12 +17,22 @@ import Levelup from './components/pages/Levelup';
 
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/levelup",
+      element: <Levelup/>
+    }
+  ]);
   return (
     <div className="App">
-    <Navbar/>
-    <HomeCarousel/>
-    <Services/>
-    {/* <Levelup/> */}
+
+<React.StrictMode>
+    <RouterProvider router={router} />
+    </React.StrictMode>
 
 
     

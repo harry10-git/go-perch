@@ -81,7 +81,7 @@ const Levelup = () => {
       {/* PS5 */}
 
       <div className="flex mt-20  items-center justify-center">
-        <img className="h-[30rem]" src="https://wallpaperaccess.com/full/1842242.jpg" alt="" srcset="" />
+        <img className="h-[30rem]" src="https://wallpaperaccess.com/full/1842242.jpg" alt="" />
       </div>
 
 
