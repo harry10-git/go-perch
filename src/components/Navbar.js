@@ -10,8 +10,8 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="flex justify-between items-center p-7 mx-auto px-24 text-white">
-        <h1 className="w-full text-5xl font-bold tracking-wider">
+      <div className="flex justify-between items-center lg:p-7 lg:mx-auto lg:px-24 text-white">
+        <h1 className="w-full lg:text-5xl font-bold tracking-wider">
           GOPERCH
           {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-yellow-500">
             PERCH
@@ -22,9 +22,9 @@ const Navbar = () => {
           <li className="p-4">Company</li>
           <li className="p-4">Resources</li>
           <li className="p-4">About</li>
-          <li className="p-4 border-white border-2 rounded-xl hover:bg-white hover:text-black"> <Link to='/levelup'>Levelup</Link> </li>
+          <li className="p-4 border-white font-semibold border-2 rounded-xl hover:bg-white hover:text-black"> <Link to='/levelup'>Levelup</Link> </li>
         </ul>
-        <div onClick={handleNav} className="block md:hidden">
+        <div onClick={handleNav} className="block md:hidden text-white">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
         <ul
@@ -34,7 +34,7 @@ const Navbar = () => {
               : "ease-in-out duration-500 fixed left-[-100%]"
           }
         >
-          <h1 className="text-white text-5xl font-bold tracking-wider">
+          <h1 className="text-white text-2xl lg:text-5xl font-bold tracking-wider">
             GOPERCH
           </h1>
           <li className="p-4 border-b border-gray-600">Home</li>

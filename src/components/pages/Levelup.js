@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Levelup = () => {
   return (
-    <div className="p-7 mx-auto px-24 text-white">
+    <div className=" text-white">
       <Navbar />
 
       {/* What do we have section */}
