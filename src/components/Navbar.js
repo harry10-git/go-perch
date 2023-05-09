@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
+// import { BsArrowUpCircle } from "react-icons/bs"; // to use in level up 
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -18,11 +20,16 @@ const Navbar = () => {
           </span> */}
         </h1>
         <ul className="hidden md:flex text-[#F4AD21] text-xl font-medium">
-          <li className="p-4 hover:text-white"><Link to="/">Home</Link></li>
+          <li className="p-4 hover:text-white">
+            <Link to="/">Home</Link>
+          </li>
           <li className="p-4">Company</li>
           <li className="p-4">Resources</li>
           <li className="p-4">About</li>
-          <li className="p-4 border-white font-semibold border-2 rounded-xl hover:bg-white hover:text-black"> <Link to='/levelup'>Levelup</Link> </li>
+          <li className="p-4 border-white font-semibold border-2 rounded-xl hover:bg-white hover:text-black">
+            {" "}
+            <Link to="/levelup">Levelup</Link>{" "}
+          </li>
         </ul>
         <div onClick={handleNav} className="block md:hidden text-white">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
@@ -30,16 +37,20 @@ const Navbar = () => {
         <ul
           className={
             nav
-              ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
+              ? "fixed z-20 left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500"
               : "ease-in-out duration-500 fixed left-[-100%]"
           }
         >
-          <h1 className="text-white p-2 text-2xl lg:text-5xl font-bold tracking-wider">
+          <h1 className="text-white p-4 text-2xl lg:text-5xl font-bold tracking-wider">
             GOPERCH
           </h1>
-          <li className="p-4 border-b border-gray-600"><Link to='/'>Home</Link></li>
+          <li className="p-4 border-b border-gray-600">
+            <Link to="/">Home</Link>
+          </li>
           <li className="p-4 border-b border-gray-600">Company</li>
-          <li className="p-4 border-b border-gray-600 text-purple-500 font-semibold text-2xl"><Link to='/levelup'>Level up</Link></li>
+          <li className="p-4 border-b border-gray-600 text-blue-400 underline font-semibold text-2xl">
+            <Link to="/levelup">Level up  </Link>
+          </li>
           {/* <li className="p-4 border-b border-gray-600">About</li> */}
         </ul>
       </div>

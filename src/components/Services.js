@@ -12,9 +12,9 @@ import { IoCarSportOutline, IoGameControllerOutline } from "react-icons/io5";
 
 const Services = () => {
   return (
-    <div className='flex flex-col gap-4 md:flex-row  lg:max-w-xl lg:mx-auto lg:space-x-20 lg:mt-20 p-28 lg:p-10 lg:border-4 lg:border-white rounded-3xl'>
+    <div className='flex flex-col gap-4 md:flex-row  lg:max-w-xl lg:mx-auto lg:space-x-20 lg:mt-20 py-5 px-28 lg:py-0 lg:p-10 lg:border-4 lg:border-white rounded-3xl'>
 
-        <div className='flex flex-col items-center justify-center p-2 space-y-4 border-2 rounded-2xl text-white hover:text-orange-400 hover:scale-110 hover:underline'>
+        <div className='flex flex-col items-center justify-center p-2 space-y-4 border-2 lg:border-0 rounded-2xl text-white hover:text-orange-400 hover:scale-110 hover:underline'>
 
         {/* <img className src={mall} alt="" /> */}
         <BsBuildings className='text-5xl lg:text-8xl  '></BsBuildings>
@@ -22,14 +22,14 @@ const Services = () => {
         
         </div>
 
-        <div className='flex flex-col items-center justify-center space-y-4 border-2 rounded-2xl text-white hover:text-green-400 hover:scale-110 hover:underline'>
+        <div className='flex flex-col items-center justify-center space-y-4 border-2 lg:border-0 rounded-2xl text-white hover:text-green-400 hover:scale-110 hover:underline'>
 
         {/* <img className src={residency} alt="" /> */}
         <IoGameControllerOutline className='text-5xl lg:text-8xl '></IoGameControllerOutline>
         <h5 className='lg:text-2xl font-sans font-semibold '>Arcade</h5>
         </div>
 
-        <div className='flex flex-col items-center justify-center border-2 rounded-2xl space-y-4 text-white hover:text-purple-400 hover:scale-110 hover:underline'>
+        <div className='flex flex-col items-center justify-center border-2 lg:border-0 rounded-2xl space-y-4 text-white hover:text-purple-400 hover:scale-110 hover:underline'>
 
         {/* <img className src={residency} alt="" /> */}
         <IoCarSportOutline className='text-5xl lg:text-8xl '></IoCarSportOutline>
