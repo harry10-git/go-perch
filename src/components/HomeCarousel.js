@@ -16,10 +16,10 @@ const HomeCarousel = () => {
 
     
   return (
-    <div className='flex items-center justify-center pt-28'>
+    <div className='flex items-center justify-center pt-7 lg:pt-28'>
 
 
-    <div className='flex w-[55rem]'>
+    <div className='flex lg:w-[55rem] w-[20rem]'>
 
     
     <Carousel autoPlay infiniteLoop stopOnHover showThumbs={false} showStatus={false}>

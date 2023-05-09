@@ -11,9 +11,9 @@ const Levelup = () => {
       {/* What do we have section */}
       <div className="mt-12 flex flex-col items-center justify-center">
 
-        <h3 className="text-7xl font-semibold">What do we have ?</h3>
+        <h3 className="text-3xl md:text-7xl font-semibold">What do we have ?</h3>
 
-        <div className='text-purple-500 font-semibold italic text-4xl pt-8 text-center'>
+        <div className='text-purple-500 font-semibold italic text-2xl md:text-4xl pt-8 text-center'>
 
     <TypeAnimation
       sequence={[
@@ -39,19 +39,19 @@ const Levelup = () => {
       </div>
 
       {/* VR */}
-      <div className="flex flex-row gap-5 mt-14">
+      <div className="flex flex-col lg:flex-row gap-5 mt-14">
         <div className="basis-1/2 flex items-center justify-center">
        
-          <h4 className="text-7xl font-bold text-center">
+          <h4 className="text-3xl lg:text-7xl font-bold text-center">
             Live an
-            <span className="px-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            <span className="lg:px-3 px-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               unreal
             </span>
             VR experience
           </h4>
         </div>
 
-        <div className="basis-1/2">
+        <div className="basis-1/2 px-8">
         <img
             src="https://a.storyblok.com/f/106061/2560x1446/2fa10839b7/into-the-metaverse-how-ar-vr-are-revolutionising-gaming.jpg/m/3840x0/filters:quality(75)"
             alt=""
@@ -62,9 +62,9 @@ const Levelup = () => {
 
 
       {/* Pool */}
-      <div className="flex flex-row-reverse gap-5 mt-20">
-        <div className="basis-1/2 flex items-center justify-center">
-          <h4 className="text-7xl font-bold text-center">
+      <div className="flex flex-col lg:flex-row-reverse lg:gap-5 mt-20 px-12 items-center justify-center">
+        <div className="basis-1/2 flex items-center justify-center mb-3 lg:mb-0">
+          <h4 className="text-3xl px-4 lg:text-7xl font-bold text-center">
             Premium quality pool tables
           </h4>
         </div>
@@ -80,8 +80,8 @@ const Levelup = () => {
 
       {/* PS5 */}
 
-      <div className="flex mt-20  items-center justify-center">
-        <img className="h-[30rem]" src="https://wallpaperaccess.com/full/1842242.jpg" alt="" />
+      <div className="flex mt-20 px-10  items-center justify-center">
+        <img className="lg:h-[30rem]" src="https://wallpaperaccess.com/full/1842242.jpg" alt="" />
       </div>
 
 
