@@ -22,9 +22,9 @@ function App() {
   ]);
   return (
     <div className="App">
-      <React.StrictMode>
+
         <RouterProvider router={router} />
-      </React.StrictMode>
+
 
       <Analytics />
     </div>
