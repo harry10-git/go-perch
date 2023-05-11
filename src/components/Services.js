@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 // import mall from './assets/images/shopping-center.png'
 // import residency from './assets/images/apartment.png'
 // import events from './assets/images/event.png'
@@ -8,11 +9,28 @@ import { BsBuildings } from "react-icons/bs";
 
 import { IoCarSportOutline, IoGameControllerOutline } from "react-icons/io5";
 
+import leveluplogo from './assets/images/levelup.svg'
+
 
 
 const Services = () => {
   return (
+
+    <div>
+         <div className='lg:hidden mt-4 px-28'>
+
+         <Link to='/levelup'>
+            <img className='p-2 border-2 rounded-2xl border-blue-500 lg:hidden' src={leveluplogo} alt="" />
+
+         </Link>
+          </div>
+    
     <div className='flex flex-col gap-4 md:flex-row  lg:max-w-xl lg:mx-auto lg:space-x-20 lg:mt-20 py-5 px-28 lg:py-0 lg:p-10 lg:border-4 lg:border-white rounded-3xl'>
+
+
+         
+
+
 
         <div className='flex flex-col items-center justify-center p-2 space-y-4 border-2 lg:border-0 rounded-2xl text-white hover:text-orange-400 hover:scale-110 hover:underline'>
 
@@ -51,6 +69,7 @@ const Services = () => {
         <h5 className='text-2xl font-sans font-semibold hover:text-yellow-300 hover:underline'>Hotels</h5>
         </div> */}
 
+    </div>
     </div>
   )
 }

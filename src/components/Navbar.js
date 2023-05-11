@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
+// import leveluplogo from './assets/images/levelup.svg'
 // import { BsArrowUpCircle } from "react-icons/bs"; // to use in level up 
 
 const Navbar = () => {
