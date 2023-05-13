@@ -74,7 +74,7 @@ const Levelup = () => {
               <h3 className="text-white text-2xl md:text-5xl font-semibold px-5 text-center -tracking-tighter hover:scale-105 duration-150 hover:text-purple-400 hover:underline">{data.content}</h3>
             </div>
             <div className="md:basis-1/2 flex items-center justify-center">
-              <img className="rounded-2xl hover:scale-105 duration-150" src={data.imgUrl} alt="" />
+              <img className="rounded-2xl hover:scale-105 duration-150 shadow-lg hover:shadow-indigo-500/40" src={data.imgUrl} alt="" />
             </div>
           </div>
         </div>

@@ -20,14 +20,14 @@ const Navbar = () => {
             PERCH
           </span> */}
         </h1>
-        <ul className="hidden md:flex text-[#F4AD21] text-xl font-medium">
-          <li className="p-4 hover:text-white">
+        <ul className="hidden md:flex text-[#F4AD21] text-xl font-medium ">
+          <li className="p-4 hover:text-white hover:scale-110 duration-150 hover:underline">
             <Link to="/">Home</Link>
           </li>
           <li className="p-4">Company</li>
           <li className="p-4">Resources</li>
           <li className="p-4">About</li>
-          <li className="p-4 border-white font-semibold border-2 rounded-xl hover:bg-white hover:text-black">
+          <li className="p-4 border-white font-semibold border-2 rounded-xl hover:bg-white hover:underline hover:text-black">
             {" "}
             <Link to="/levelup">Levelup</Link>{" "}
           </li>
