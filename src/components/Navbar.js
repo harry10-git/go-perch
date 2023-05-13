@@ -42,7 +42,7 @@ const Navbar = () => {
               : "ease-in-out duration-500 fixed left-[-100%]"
           }
         >
-          <h1 className="text-white p-4 text-2xl lg:text-5xl font-bold tracking-wider">
+          <h1 className="text-white p-4 max-w-xs text-2xl lg:text-5xl font-bold tracking-wider">
             GOPERCH
           </h1>
           <li className="p-4 border-b border-gray-600">
