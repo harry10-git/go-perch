@@ -16,7 +16,7 @@ import leveluplogo from './assets/images/levelup.svg'
 const Services = () => {
   return (
 
-    <div>
+    <div data-aos="zoom-in">
          <div className='lg:hidden mt-4 px-28'>
 
          <Link to='/levelup'>

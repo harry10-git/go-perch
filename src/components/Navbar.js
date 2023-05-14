@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div data-aos="zoom-in">
       <div className="flex justify-between items-center lg:p-7 lg:mx-auto lg:px-24 p-10 text-white">
         <h1 className="w-full text-3xl lg:text-5xl font-bold tracking-wider">
           GOPERCH

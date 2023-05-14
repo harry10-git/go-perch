@@ -1,8 +1,14 @@
-import React from "react";
+import {React,useEffect} from "react";
 import Navbar from "../Navbar";
 import { TypeAnimation } from "react-type-animation";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Levelup = () => {
+  useEffect(()=>{
+    AOS.init({duration:1000})
+  },[]);
+
   const mydata = [
     {
       id: 1,
@@ -33,7 +39,8 @@ const Levelup = () => {
       <Navbar />
     <div className=" text-white max-w-xs lg:max-w-7xl mx-auto">
       {/* What do we have section */}
-      <div className="mt-12 flex flex-col items-center justify-center">
+      <div className="mt-12 flex flex-col items-center justify-center"
+      data-aos="zoom-in">
         <h3 className="text-3xl md:text-7xl font-semibold">
           What do we have ?
         </h3>
@@ -64,11 +71,12 @@ const Levelup = () => {
       {/* Content for Levelup  */}
       <div className="lg:mt-10">
       {mydata.map((data) => (
-        <div className="pt-10" key={data.id}>
+        <div className="pt-10" key={data.id} >
           <div
             className={`flex flex-col gap-5 ${
               data.id % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             }`}
+            data-aos="zoom-in"
           >
             <div className="md:basis-1/2 flex items-center justify-center">
               <h3 className="text-white text-2xl md:text-5xl font-semibold px-5 text-center -tracking-tighter hover:scale-105 duration-150 hover:text-purple-400 hover:underline">{data.content}</h3>
