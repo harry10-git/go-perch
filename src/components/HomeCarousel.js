@@ -1,19 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 const HomeCarousel = () => {
 
-  useEffect(()=>{
-    AOS.init({duration:1000})
-  },[])
+ 
 
   return (
-    <div className="flex items-center justify-center pt-7 lg:pt-28" data-aos="zoom-in">
+    <div className="flex items-center justify-center pt-7 lg:pt-28" >
       <div className="flex lg:w-[55rem] w-[20rem]">
         <Carousel
           autoPlay

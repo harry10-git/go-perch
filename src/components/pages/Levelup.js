@@ -1,13 +1,10 @@
-import {React,useEffect} from "react";
+import React from "react";
 import Navbar from "../Navbar";
 import { TypeAnimation } from "react-type-animation";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
 
 const Levelup = () => {
-  useEffect(()=>{
-    AOS.init({duration:1000})
-  },[]);
+ 
 
   const mydata = [
     {
