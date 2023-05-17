@@ -2,7 +2,7 @@ import React from "react";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-
+import TriggerImg from "./assets/images/trigger.jpeg";
 
 
 const HomeCarousel = () => {
@@ -28,7 +28,7 @@ const HomeCarousel = () => {
 
           <div>
             <img
-              src="https://radissonhotelsamericas.iceportal.com/image/country-inn-suites-by-radisson-page-az/exterior/20828-139761-f63797451_3xl.jpg"
+              src= {TriggerImg}
               alt=""
             />
           </div>
