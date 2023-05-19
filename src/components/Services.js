@@ -14,17 +14,19 @@ import leveluplogo from "./assets/images/levelup.svg";
 const Services = () => {
   return (
     <div>
-      <div className="lg:hidden mt-2 px-28">
+      <div className="flex items-center justify-center mt-4 lg:mt-14 px-28">
         <Link to="/levelup">
           <img
-            className="p-2 border-2 rounded-2xl border-blue-500 lg:hidden"
+            className="p-2 border-2 rounded-2xl border-blue-500 lg:w-64 hover:scale-110 hover:border-slate-400 hover:bg-white duration-100"
             src={leveluplogo}
             alt=""
           />
         </Link>
       </div>
 
-      <div className="flex flex-col gap-4 md:flex-row  lg:max-w-xl lg:mx-auto lg:space-x-20 lg:mt-20 py-10 px-28 lg:py-0 lg:p-10">
+
+
+      <div className="flex flex-col gap-4 md:flex-row  lg:max-w-xl lg:mx-auto lg:space-x-20 lg:mt-14 py-10 px-28 lg:py-0 lg:p-10">
         <div className="flex flex-col items-center justify-center p-2 space-y-4 border-2 lg:border-0 rounded-2xl text-white hover:text-orange-400 hover:scale-110 hover:underline">
           {/* <img className src={mall} alt="" /> */}
           <BsBuildings className="text-5xl lg:text-8xl  "></BsBuildings>

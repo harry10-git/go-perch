@@ -15,8 +15,8 @@ const Navbar = () => {
   return (
     <div data-aos="zoom-in">
       <div className="flex justify-between items-center lg:p-7 lg:mx-auto lg:px-24 p-10 text-white">
-        <h1 className="w-full text-3xl lg:text-5xl font-bold tracking-wider">
-          GOPERCH
+        <h1 className="w-full text-3xl lg:text-5xl font-bold tracking-wider hover:underline duration-150 hover:text-yellow-400">
+          <Link to="/">GOPERCH</Link>
           {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-yellow-500">
             PERCH
           </span> */}
