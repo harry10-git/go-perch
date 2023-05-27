@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import Bird_Logo from "./assets/images/bird_logo.png";
 // import leveluplogo from './assets/images/levelup.svg'
-// import { BsArrowUpCircle } from "react-icons/bs"; // to use in level up 
-
+// import { BsArrowUpCircle } from "react-icons/bs"; // to use in level up
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -15,12 +15,12 @@ const Navbar = () => {
   return (
     <div data-aos="zoom-in">
       <div className="flex justify-between items-center lg:p-7 lg:mx-auto lg:px-24 p-10 text-white">
-        <h1 className="w-full text-3xl lg:text-5xl font-bold tracking-wider hover:underline duration-150 hover:text-yellow-400">
-          <Link to="/">GOPERCH</Link>
-          {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-yellow-500">
-            PERCH
-          </span> */}
-        </h1>
+        <div className="flex items-center justify-center">
+          <img className="h-10 mr-2 md:h-20 md:mr-4" src={Bird_Logo} alt="" />
+          <h1 className="w-full text-3xl lg:text-5xl font-bold tracking-wider hover:underline duration-150 hover:text-yellow-400">
+            <Link to="/">GOPERCH</Link>
+          </h1>
+        </div>
         <ul className="hidden md:flex text-[#F4AD21] text-xl font-medium ">
           <li className="p-4 hover:text-white hover:scale-110 duration-150 hover:underline">
             <Link to="/">Home</Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
           </li>
           <li className="p-4 border-b border-gray-600">Company</li>
           <li className="p-4 border-b border-gray-600 text-blue-400 underline font-semibold text-2xl">
-            <Link to="/levelup">Level up  </Link>
+            <Link to="/levelup">Level up </Link>
           </li>
           {/* <li className="p-4 border-b border-gray-600">About</li> */}
         </ul>
