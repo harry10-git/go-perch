@@ -11,6 +11,7 @@ import Malls from "./components/pages/Malls";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { Analytics } from "@vercel/analytics/react";
+import About from "./components/pages/About";
 
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
     {
       path: "/malls",
       element: <Malls/>
+    },
+    {
+      path: "about",
+      element: <About />
     }
   ]);
   return (

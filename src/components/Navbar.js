@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div data-aos="zoom-in">
-      <div className="flex justify-between items-center lg:p-7 lg:mx-auto lg:px-24 p-10 text-white">
+      <div className="flex justify-between items-center lg:p-7 container mx-auto p-10 text-white">
         <div className="flex items-center justify-center">
           <img className="h-10 mr-2 md:h-20 md:mr-4" src={Bird_Logo} alt="" />
           <h1 className="w-full text-3xl lg:text-5xl font-bold tracking-wider hover:underline duration-150 hover:text-yellow-400">
@@ -27,11 +27,8 @@ const Navbar = () => {
           </li>
           <li className="p-4">Company</li>
           <li className="p-4">Resources</li>
-          <li className="p-4">About</li>
-          <li className="p-4 border-white font-semibold border-2 rounded-xl hover:bg-white hover:underline hover:text-black">
-            {" "}
-            <Link to="/levelup">Levelup</Link>{" "}
-          </li>
+          <li className="p-4"><Link to='/about'>About</Link></li>
+         
         </ul>
         <div onClick={handleNav} className="block md:hidden text-white">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
@@ -50,9 +47,7 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="p-4 border-b border-gray-600">Company</li>
-          <li className="p-4 border-b border-gray-600 text-blue-400 underline font-semibold text-2xl">
-            <Link to="/levelup">Level up </Link>
-          </li>
+         
           {/* <li className="p-4 border-b border-gray-600">About</li> */}
         </ul>
       </div>
