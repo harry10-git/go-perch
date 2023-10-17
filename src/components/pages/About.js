@@ -5,7 +5,10 @@ const About = () => {
   return (
     <div className='min-h-screen container mx-auto'>
     <Navbar/>
-    <h1>asda</h1>
+
+      <div className='bg-slate-300'>
+          <h3>CEO</h3>
+      </div>
     
 
 

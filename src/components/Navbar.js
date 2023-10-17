@@ -25,9 +25,9 @@ const Navbar = () => {
           <li className="p-4 hover:text-white hover:scale-110 duration-150 hover:underline">
             <Link to="/">Home</Link>
           </li>
-          <li className="p-4">Company</li>
-          <li className="p-4">Resources</li>
-          <li className="p-4"><Link to='/about'>About</Link></li>
+          <li className="p-4 hover:text-white hover:scale-110 duration-150 hover:underline">Company</li>
+          <li className="p-4 hover:text-white hover:scale-110 duration-150 hover:underline">Resources</li>
+          {/* <li className="p-4 hover:text-white hover:scale-110 duration-150 hover:underline"><Link to='/about'>About</Link></li> */}
          
         </ul>
         <div onClick={handleNav} className="block md:hidden text-white">
